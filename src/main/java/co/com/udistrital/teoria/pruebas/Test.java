@@ -13,10 +13,13 @@ public class Test {
     
     public static void main(String[] args) {
         String palabra = "Hola";
+        String palabraCodificada = "";
         char[] array = palabra.toCharArray();
         for (char c : array) {
             System.out.println("ASCII: " + (int) c);
             System.out.println("BINARY: " + Integer.toBinaryString(c));
+            palabraCodificada += Integer.toBinaryString(c);
         }
+        System.out.println("Palabra Codificada: " + palabraCodificada);
     }
 }
