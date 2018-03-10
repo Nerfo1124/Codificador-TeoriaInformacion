@@ -10,7 +10,7 @@ package co.com.udistrital.teoria.pruebas;
  * @author Fernando
  */
 public class Test {
-    
+
     public static void main(String[] args) {
         String palabra = "Hola";
         String palabraCodificada = "";
@@ -21,5 +21,15 @@ public class Test {
             palabraCodificada += Integer.toBinaryString(c);
         }
         System.out.println("Palabra Codificada: " + palabraCodificada);
+
+        int[] bitsLogicos = {0, 1};
+        int[] bitsOperadores = {0, 1};
+
+        for (int bitsLogico : bitsLogicos) {
+            for (int bitsOperador : bitsOperadores) {
+                System.out.println("XOR " + bitsLogico + "-" + bitsOperador + ":" + (bitsLogico ^ bitsOperador));
+            }
+        }
+
     }
 }
