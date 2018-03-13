@@ -118,7 +118,7 @@ public class TestMachine {
             for (StatesVO estado : machine.getEstados()) {
                 if (estado.valuesToString().equals(estInicial)) {
                     printEstados += estado.getName() + ",";
-                    codificacion += estado.salidasToString();
+                    codificacion += estado.salidasToString(input);
                     estInicial = estado.nextValues(input);
                     break;
                 }

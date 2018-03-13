@@ -55,9 +55,9 @@ public class StatesVO {
         return response;
     }
     
-    public String salidasToString() {
+    public String salidasToString(Integer input) {
         String response = "";
-        for (Integer value : this.salidas) {
+        for (Integer value : getSalidas(input)) {
             response += value.toString();
         }
         return response;
