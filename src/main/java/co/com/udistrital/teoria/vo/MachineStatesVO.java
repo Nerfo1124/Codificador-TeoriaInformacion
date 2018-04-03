@@ -45,4 +45,14 @@ public class MachineStatesVO {
         }
         this.operaciones.add(operacion);
     }
+    
+    public String getNameState(String value) {
+        String response = null;
+        for (StatesVO estado : this.estados) {
+            if(estado.valuesToString().equals(value)){
+                response = estado.getName();
+            }
+        }
+        return response;
+    }
 }
